@@ -3,11 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Phase Shmup</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
 </head>
 <body>
-	<h1>Phase Shmup</h1>
-	<div id="game"></div>
-	
+	<div id="frame">	
+		<h1>Shoot Um Up Cuz!</h1>
+		<div id="game"></div>
+	</div>
+	<nav id="controls">
+		<li class="move"><span>Left:</span> Left Arrow</li>
+		<li class="move"><span>Right:</span> Right Arrow</li><br>
+		<li class="move"><span>Up</span>: Up Arrow</li>
+		<li class="move"><span>Down:</span> Down Arrow</li>
+		<li class="move"><span>Fire:</span> Space Bar</li>
+	</nav>
 
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser-ce/2.10.0/phaser.min.js"></script>
 	 <script src="js/game.js"></script>

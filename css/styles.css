@@ -1,0 +1,32 @@
+body{
+	font-family: 'Supermercado One', cursive;
+	font-size: 50px;
+}
+
+h1{
+	text-align: center;
+	
+}
+
+#controls{
+	text-align: center;
+	border: 1px solid black;
+	width: 40%;
+	margin: 0 auto;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+.move{
+	display: inline;
+	font-size: 25px;
+}
+
+span{
+	color: #DC143C;
+}
+
+#game{
+	width: 20%;
+	margin: 0 auto;
+}

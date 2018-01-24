@@ -184,7 +184,7 @@ function removeBullet(bullet) {
   function gameOver() {
     game.state.destroy();
     game.add.text(90, 200, 'You Pau Cuz', { fill: '#FFFFFF' });
-    let playAgain = game.add.text(120, 300, 'Play Again', { fill: '#FFFFFF' });
+    let playAgain = game.add.text(120, 300, 'Try One Mo Time', { fill: '#FFFFFF' });
   playAgain.inputEnabled = true;
   playAgain.events.onInputUp.add(_ => {
     window.location.reload();
