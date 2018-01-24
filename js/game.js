@@ -9,7 +9,6 @@ let playerBullets;
 let enemies;
 let enemyBullets;
 
-
 (Phaser => {
   const GAME_WIDTH = 460;
   const GAME_HEIGHT = 600;
@@ -33,7 +32,6 @@ const INITIAL_MOVESPEED = 4;
   	enemies = game.add.group();
   	enemyBullets = game.add.group();
   	enemyBullets.enableBody = true;
-
   };
 
   function update() {
@@ -51,7 +49,6 @@ const INITIAL_MOVESPEED = 4;
       .filter( bullet => bullet.y < 0 )
       .forEach( bullet => bullet.destroy() );
   };
-
 
 
 const GFX = 'gfx';
@@ -98,8 +95,6 @@ function handleBulletAnimations() {
   playerBullets.children.forEach( bullet => bullet.y -= PLAYER_BULLET_SPEED );
 };
 
-
-
 const ENEMY_SPAWN_FREQ = 100; // higher is less frequent
 
 const randomGenerator = new Phaser.RandomDataGenerator();
@@ -131,9 +126,7 @@ function handleBulletAnimations() {
   });
 };
 
-
-
-   const ENEMY_SPEED = 4.5;
+const ENEMY_SPEED = 4.5;
 
   function handleEnemyActions() {
     enemies.children.forEach( enemy => enemy.y += ENEMY_SPEED );
